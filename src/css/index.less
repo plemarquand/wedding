@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'mixbrushmedium';
+    src: url('fonts/mixbrush-webfont.eot');
+    src: url('fonts/mixbrush-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mixbrush-webfont.woff2') format('woff2'),
+         url('fonts/mixbrush-webfont.woff') format('woff'),
+         url('fonts/mixbrush-webfont.ttf') format('truetype'),
+         url('fonts/mixbrush-webfont.svg#mixbrushmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'olivierregular';
+    src: url('fonts/olivier_demo-webfont.eot');
+    src: url('fonts/olivier_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/olivier_demo-webfont.woff2') format('woff2'),
+         url('fonts/olivier_demo-webfont.woff') format('woff'),
+         url('fonts/olivier_demo-webfont.ttf') format('truetype'),
+         url('fonts/olivier_demo-webfont.svg#olivierregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'storymedium';
+    src: url('fonts/story-webfont.eot');
+    src: url('fonts/story-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/story-webfont.woff2') format('woff2'),
+         url('fonts/story-webfont.woff') format('woff'),
+         url('fonts/story-webfont.ttf') format('truetype'),
+         url('fonts/story-webfont.svg#storymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+}
+
+.hero-unit {
+  background-size: cover;
+  background: url('../img/clouds.jpg') no-repeat center top;
+  background-repeat: no-repeat;
+  height: 830px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .hero-title {
+    font-family: 'mixbrushmedium';
+    color: #181818;
+    text-align: center;
+    font-size: 10em;
+    margin: 0;
+    margin-bottom: -25px;
+
+    sub {
+      font-size: 0.4em;
+      line-height: 0;
+      display: block;
+      vertical-align: middle;
+      margin-top: -.6em;
+    }
+  }
+
+  .hero-subtitle {
+    font-family: 'olivierregular';
+    margin: 0;
+    font-size: 2.5em;
+  }
+}
+
+.nav-container {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #c48ee7;
+  font-family: 'olivierregular';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .navbar-header {
+    margin: 0 auto;
+
+    a {
+      color: white;
+      padding: 15px 15px;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.content-bg {
+  background-size: cover;
+  background: url('../img/sunset.jpg') no-repeat center top;
+  background-repeat: no-repeat;
+}
+
+.content-container {
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 600px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+
+  .details-container {
+    width: 100%;
+  }
+
+  h1 {
+    font-family: 'storymedium';
+    font-size: 6em;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+
+  .us {
+    margin-top: 25px;
+    align-self: center;
+  }
+}
