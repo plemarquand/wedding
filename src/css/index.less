@@ -31,6 +31,28 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'storymedium';
+    src: url('fonts/story-webfont.eot');
+    src: url('fonts/story-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/story-webfont.woff2') format('woff2'),
+         url('fonts/story-webfont.woff') format('woff'),
+         url('fonts/story-webfont.ttf') format('truetype'),
+         url('fonts/story-webfont.svg#storymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'doodle_dings_1_birds_cagesRg';
+    src: url('fonts/doodle_dings_1_birds_cages-webfont.eot');
+    src: url('fonts/doodle_dings_1_birds_cages-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/doodle_dings_1_birds_cages-webfont.woff2') format('woff2'),
+         url('fonts/doodle_dings_1_birds_cages-webfont.woff') format('woff'),
+         url('fonts/doodle_dings_1_birds_cages-webfont.ttf') format('truetype'),
+         url('fonts/doodle_dings_1_birds_cages-webfont.svg#doodle_dings_1_birds_cagesRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
 }
@@ -67,6 +89,23 @@ body {
     margin: 0;
     font-size: 2.5em;
   }
+
+  .birds {
+    font-family: 'doodle_dings_1_birds_cagesRg';
+    position: absolute;
+    margin-top: 188px;
+    margin-left: 218px;
+    font-size: .2em;
+    transform: scale(-1, 1);
+
+    .sitting {
+
+    }
+    .flying {
+      display: none;
+    }
+  }
+
 }
 
 .nav-container {
@@ -80,6 +119,7 @@ body {
 
   .navbar-header {
     margin: 0 auto;
+    text-align: center;
 
     a {
       color: white;
@@ -93,13 +133,22 @@ body {
   background-size: cover;
   background: url('../img/sunset.jpg') no-repeat center top;
   background-repeat: no-repeat;
+  box-shadow: 0px 8px 16px #5E489A inset;
 }
 
 .content-container {
+  background: rgba(119,94,188,0.8);
+  background: -moz-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(119,94,188,0.8)), color-stop(12%, rgba(195,142,231,0.41)), color-stop(100%, rgba(195,142,231,0.41)));
+  background: -webkit-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
+  background: -o-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
+  background: -ms-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
+  background: linear-gradient(to bottom, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#775ebc', endColorstr='#c38ee7', GradientType=0 );
   padding: 0 10px;
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 600px;
+  max-width: 800px;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -114,7 +163,6 @@ body {
     text-align: center;
     padding: 10px 0 0 0;
   }
-
   .us {
     margin-top: 25px;
     align-self: center;
