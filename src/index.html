@@ -33,45 +33,89 @@
   </div>
   <div class="nav-container">
     <div class="navbar-header">
-      <a href="#">The Couple</a>
-      <a href="#">RSVP</a>
-      <a href="#">Wedding Details</a>
-      <a href="#">Registry</a>
+      <a href="#origin">The Couple</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#details">Wedding Details</a>
+      <a href="#registry">Registry</a>
     </div>
   </div>
   <div class="content-bg">
     <div class="content-container">
-      <div>
-        <h1>Origin Story</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum, mauris nec accumsan gravida, dui nisi elementum augue, at vehicula tellus nulla sit amet augue. Pellentesque aliquam odio vitae consequat lacinia. Suspendisse posuere, metus non pulvinar aliquam, dui velit blandit eros, a aliquet arcu diam sit amet diam. Vivamus aliquet neque in lacinia consequat. Vivamus feugiat tincidunt dui, quis cursus mi efficitur eu. Vestibulum nec dapibus sapien, non pretium turpis. Proin ultrices pharetra mauris eget maximus. Integer et faucibus leo, non suscipit metus. Suspendisse ut dapibus velit. Sed iaculis auctor efficitur. Ut rutrum nibh sed tortor interdum auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id metus eget nunc feugiat pellentesque a sed urna. Duis nec nunc sed dui feugiat auctor at sit amet arcu. Quisque eu tempus risus, vitae viverra lorem. Maecenas luctus est et quam lobortis, et facilisis massa commodo.</p>
-
-        <p>Nam accumsan pretium lectus lobortis varius. Proin efficitur elementum interdum. Nulla venenatis, ante nec mattis aliquet, dui dolor molestie neque, sit amet convallis nunc ante at mi. Quisque posuere quis enim ut molestie. Nunc scelerisque felis sit amet lorem laoreet consequat ultricies quis felis. In hac habitasse platea dictumst. Integer aliquet nisi lectus, mattis facilisis ante Vestibulumm ut. Aliquam tincidunt vehicula rhoncus.</p>
+      <div class="section us">
+        <a name="origin"></a>
+        <p class="opener">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum, mauris nec accumsan gravida, dui nisi elementum augue, at vehicula tellus nulla sit amet augue. Pellentesque aliquam odio vitae consequat lacinia.</p>
+        <img class="us" src="img/us.png"/>
       </div>
 
-      <img class="us" src="img/us.png"/>
+      <div class="section details">
+        <a name="details"></a>
+        <h1>Wedding Details</h1>
+        <p>Ceremony starts at 2PM, followed by cocktail hour at 4PM.</p>
 
-      <h1>Wedding Details</h1>
-      <div class="container details-container">
-        <div class="col-md-6 details-block">
-          <h2>Ceremony</h2>
+        <p>The ceremony is a 5 minute walk from the reception venue. Hotels are also located within walking distance.</p>
+
+        <div class="details-container">
+          <div class="col-md-6 details-block">
+            <a name="ceremony"></a>
+            <h2>Ceremony</h2>
+            <h4>Time: July 30th, 2pm</h4>
+            <h4><a href="http://www.saulttourism.com/what-to-do/attractions/listing.aspx?listing=29">Roberta Bondar Pavilion</a></h4>
+            <a class="btn btn-primary show-ceremony addthisevent-drop">Show Map</a>
+            <div title="Add to Calendar" class="addthisevent">
+              Add to Calendar
+              <span class="start">07/30/2016 02:00 PM</span>
+              <span class="end">07/30/2016 3:00 PM</span>
+              <span class="timezone">America/Toronto</span>
+              <span class="title">Powell/LeMarquand Wedding: Ceremony</span>
+              <span class="description"></span>
+              <span class="location">Roberta Bondar Pavilion, Sault Ste Marie</span>
+              <span class="date_format">MM/DD/YYYY</span>
+            </div>
+
+            <iframe class="ceremony-map hidden" width="300" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=65%20Foster%20Dr%2C%20Sault%20Ste.%20Marie%2C%20ON%20P6A%2C%20Canada&key=AIzaSyDm8KEreQLLUU4eQJ79MeiO6Za2cqMdlp8"></iframe>
+          </div>
+
+          <div class="col-md-6 details-block">
+            <a name="reception"></a>
+            <h2>Reception</h2>
+            <h4>Time: July 30th, 5pm</h4>
+            <h4><a href="https://www.facebook.com/TheGrandGardens">Grand Gardens</a></h4>
+            <a class="btn btn-primary show-reception addthisevent-drop">Show Map</a>
+            <div title="Add to Calendar" class="addthisevent">
+              Add to Calendar
+              <span class="start">07/30/2016 04:00 PM</span>
+              <span class="end">07/31/2016 2:00 AM</span>
+              <span class="timezone">America/Toronto</span>
+              <span class="title">Powell/LeMarquand Wedding: Reception</span>
+              <span class="description"></span>
+              <span class="location">Grand Gardens, Sault Ste Marie</span>
+              <span class="date_format">MM/DD/YYYY</span>
+            </div>
+
+            <iframe class="reception-map hidden" width="300" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=The%20Grand%20Gardens%2C%20Dennis%20Street%2C%20Sault%20Ste.%20Marie%2C%20ON%2C%20Canada&key=AIzaSyDm8KEreQLLUU4eQJ79MeiO6Za2cqMdlp8"></iframe>
+          </div>
+
+          <div class="col-md-12 details-block">
+            <a name="accommodation"></a>
+            <h2>Accommodation</h2>
+            <p>Block of several rooms at the </p>
+          </div>
         </div>
-
-        <div class="col-md-6 details-block">
-          <h2>Reception</h2>
-          <a href="https://www.facebook.com/TheGrandGardens">Grand Gardens</a>
-        </div>
-
-        <div class="details-block">
-          <h2>Accommodation</h2>
-        </div>
-
       </div>
 
-      <h1>RSVP</h1>
-      <p>Nam accumsan pretium lectus lobortis varius. Proin efficitur elementum interdum. Nulla venenatis, ante nec mattis aliquet, dui dolor molestie neque, sit amet convallis nunc ante at mi. Quisque posuere quis enim ut molestie. Nunc scelerisque felis sit amet lorem laoreet consequat ultricies quis felis. In hac habitasse platea dictumst. Integer aliquet nisi lectus, mattis facilisis ante Vestibulumm ut. Aliquam tincidunt vehicula rhoncus.</p>
+      <div class="section rsvp">
+        <a name="rsvp"></a>
+        <h1>RSVP</h1>
+        <p>We'd love to have you! You should let us know we're coming.</p>
+        <p>Invitations will be mailed out soon. Please RSVP by May 30th.</p>
+      </div>
 
-      <h1>Registry</h1>
-      <p>Nam accumsan pretium lectus lobortis varius. Proin efficitur elementum interdum. Nulla venenatis, ante nec mattis aliquet, dui dolor molestie neque, sit amet convallis nunc ante at mi. Quisque posuere quis enim ut molestie. Nunc scelerisque felis sit amet lorem laoreet consequat ultricies quis felis. In hac habitasse platea dictumst. Integer aliquet nisi lectus, mattis facilisis ante Vestibulumm ut. Aliquam tincidunt vehicula rhoncus.</p>
+      <div class="section registry">
+        <a name="registry"></a>
+        <h1><a class="registry-link" href="http://www.myregistry.com/wedding-registry/Paul-LeMarquand-Megan-Powell-Toronto-ON/937519">Registry</a></h1>
+        <p>We love presents but your presence is present enough.</p>
+        <a class="registry-link-sub" href="http://www.myregistry.com/wedding-registry/Paul-LeMarquand-Megan-Powell-Toronto-ON/937519">See our Registry</a>
+      </div>
     </div>
   </div>
 
@@ -86,6 +130,7 @@
     </script>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="https://addthisevent.com/libs/1.6.0/ate.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
