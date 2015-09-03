@@ -1,3 +1,23 @@
+
+@bodyColor: #F2F5EB;
+@bodyShadow: #444444 1px 1px 1px;
+@pageBackground: #445893;
+@heroBackground: url('../img/hero_bg.jpg') no-repeat center top;
+@aboutBackground: url('../img/forest_bg.jpg') no-repeat center top;
+@detailsBackground: url('../img/lake_bg.jpg') no-repeat center top;
+@rsvpBackground: url('../img/field_bg.jpg') no-repeat center top;
+@registryBackground: url('../img/highlands_bg.jpg') no-repeat center top;
+
+@script-font: {
+  font-family: 'Raleway';
+  text-shadow: @bodyShadow;
+};
+
+@body-font: {
+  font-family: 'Playfair Display', serif;
+  color: @bodyColor;
+};
+
 @font-face {
     font-family: 'mixbrushmedium';
     src: url('fonts/mixbrush-webfont.eot');
@@ -54,26 +74,17 @@
     font-style: normal;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Cabin);
+// @import url(http://fonts.googleapis.com/css?family=Cabin);
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 body {
-  color: #F2F5EB;
-  font-family: 'Cabin', sans-serif;
+  @body-font();
 }
 
-@pageBackground: #445893;
-
-@script-font: {
-  font-family: 'Raleway';
-  text-shadow: #444444 1px 1px 1px;
-};
-
-
 .hero-unit {
-  background-size: cover;
-  background: url('../img/clouds.jpg') no-repeat center top;
+  background: @heroBackground;
   background-repeat: no-repeat;
   height: 830px;
   display: flex;
@@ -117,7 +128,6 @@ body {
       display: none;
     }
   }
-
 }
 
 .nav-container {
@@ -160,25 +170,31 @@ html {
 }
 
 .content-bg {
-  background-size: cover;
-  background: url('../img/sunset.jpg') no-repeat center top;
-  background-repeat: no-repeat;
-  box-shadow: 0px 8px 16px #5E489A inset;
-  background-color: @pageBackground;
+  box-shadow: 0px 8px 16px #3F3B4C inset;
+  background-size: cover !important;
+
+  &.about {
+    background: @aboutBackground;
+  }
+
+  &.details {
+    background: @detailsBackground;
+  }
+
+  &.registry {
+    background: @registryBackground;
+  }
+
+  &.rsvp {
+    background: @rsvpBackground;
+  }
 }
 
 .content-container {
   background: rgba(119,94,188,0.8);
-  background: -moz-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(119,94,188,0.8)), color-stop(12%, rgba(195,142,231,0.41)), color-stop(100%, rgba(195,142,231,0.41)));
-  background: -webkit-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
-  background: -o-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
-  background: -ms-linear-gradient(top, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
-  background: linear-gradient(to bottom, rgba(119,94,188,0.8) 0%, rgba(195,142,231,0.41) 12%, rgba(195,142,231,0.41) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#775ebc', endColorstr='#c38ee7', GradientType=0 );
+  background: linear-gradient(to bottom, rgba(53, 53, 53, 0.4) 0%, rgba(203, 184, 216, 0.41) 20%, rgba(91, 82, 97, 0.41) 100%);
   padding: 0 25px;
   margin: 0 auto;
-  margin-bottom: 30px;
   max-width: 800px;
   text-align: justify;
   display: flex;
@@ -191,7 +207,7 @@ html {
   }
 
   a {
-    text-shadow: none;
+    color: #CAFAFA;
   }
 
   p {
@@ -263,4 +279,34 @@ html {
   color: white;
   font-size: 2em;
   text-decoration: underline !important;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.section.details {
+  padding-bottom: 20px;
+}
+
+.details-block {
+  margin-bottom: 10px;
+
+  img {
+    border: 1px solid #BF8BDD;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(182, 134, 215);
+  }
+
+  .accommodation-content {
+    font-size: 0.55em;
+    text-shadow: rgba(76, 76, 76, 0.51) 1px 1px 0px;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      text-align: left !important;
+    }
+  }
 }

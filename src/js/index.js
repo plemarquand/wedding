@@ -31,7 +31,7 @@ const animateBird = (elem, distance, x, y) => {
 const sizeSection = (selector, maxSize = 880, minSize = 550) => {
   var containerHeight = $('.nav-container').height();
   var heroHeight = Math.max(Math.max(containerHeight, window.innerHeight - containerHeight - 20), minSize);
-  console.log("hero height", heroHeight);
+
   if(window.innerHeight < maxSize) {
     $(selector).css('height', heroHeight);
   }
@@ -39,7 +39,9 @@ const sizeSection = (selector, maxSize = 880, minSize = 550) => {
 
 const sizeSections = () => {
   sizeSection('.hero-unit');
-  sizeSection('.section');
+  sizeSection('.section.us');
+  sizeSection('.section.rsvp');
+  sizeSection('.section.registry');
 };
 
 $(document).ready(() => {
