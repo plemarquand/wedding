@@ -53,7 +53,7 @@ var sizeSections = function sizeSections() {
 
 $(document).ready(function () {
   sizeSections();
-  $(window).on('resize', sizeSections);
+  // $(window).on('resize', sizeSections);
 
   var containerHeight = $('.nav-container').height();
   var heroHeight = Math.max(containerHeight, window.innerHeight - containerHeight - 20);
