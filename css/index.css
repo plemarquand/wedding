@@ -236,6 +236,26 @@ html {
     font-size: 1.15em;
   }
 }
+@media (max-width: 768px) {
+  .details-block {
+    text-align: center !important;
+  }
+  .details-block > iframe {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    height: 400px;
+  }
+  .accommodation-content p {
+    text-align: center !important;
+  }
+  .accommodation-content p:last-child {
+    margin-bottom: 20px;
+  }
+  .accommodation-content h3 {
+    margin-top: 20px !important;
+  }
+}
 .registry-link:hover,
 .registry-link-sub:hover {
   text-decoration: none;
@@ -253,7 +273,7 @@ html {
   padding: 0;
 }
 .section.details {
-  padding-bottom: 20px;
+  padding: 20px 0px;
 }
 .details-block {
   margin-bottom: 10px;
@@ -270,5 +290,5 @@ html {
   margin: 0;
 }
 .details-block .accommodation-content p {
-  text-align: left !important;
+  text-align: left;
 }

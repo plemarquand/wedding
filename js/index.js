@@ -31,19 +31,21 @@ var animateBird = function animateBird(elem, distance, x, y) {
 };
 
 var sizeSection = function sizeSection(selector) {
-  var maxSize = arguments.length <= 1 || arguments[1] === undefined ? 880 : arguments[1];
-  var minSize = arguments.length <= 2 || arguments[2] === undefined ? 550 : arguments[2];
+  var $el = $(selector);
+  var originalHeight = $el.get(0).originalHeight || ($el.get(0).originalHeight = $el.height() + 60);
+  console.log('originalheight for ', selector, 'is', originalHeight);
+  // var containerHeight = $el.height();
+  var windowHeight = window.innerHeight - 20;
+  console.log("window height", windowHeight);
+  var sectionSize = Math.max(windowHeight, originalHeight);
 
-  var containerHeight = $('.nav-container').height();
-  var heroHeight = Math.max(Math.max(containerHeight, window.innerHeight - containerHeight - 20), minSize);
-
-  if (window.innerHeight < maxSize) {
-    $(selector).css('height', heroHeight);
-  }
+  console.log('sectionSize', sectionSize);
+  $el.css('height', sectionSize);
 };
 
 var sizeSections = function sizeSections() {
-  sizeSection('.hero-unit');
+  $('.hero-unit').css('height', window.innerHeight - $('.nav-container').height() - 20);
+
   sizeSection('.section.us');
   sizeSection('.section.rsvp');
   sizeSection('.section.registry');
