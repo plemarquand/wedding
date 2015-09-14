@@ -43,6 +43,7 @@ body {
 .hero-unit {
   background: url('../img/hero_bg.jpg') no-repeat center top;
   background-repeat: no-repeat;
+  background-size: cover !important;
   height: 830px;
   display: -webkit-box;
   display: -webkit-flex;
