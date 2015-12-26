@@ -39,6 +39,7 @@
 body {
   font-family: 'Playfair Display', serif;
   color: #f2f5eb;
+  overflow-x: hidden;
 }
 .hero-unit {
   background: url('../img/hero_bg.jpg') no-repeat center top;
@@ -64,6 +65,7 @@ body {
   justify-content: center;
   color: #181818;
   text-shadow: #D4C8DC 1px 1px 32px;
+  overflow-x: hidden;
 }
 .hero-unit .hero-title {
   font-family: 'mixbrushmedium';
